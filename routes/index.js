@@ -1,4 +1,3 @@
-//获取token
 var getMoreMethod = require('../method_routes/getMore-method').getMoreMethod;
 module.exports = function(app, domain) {
     //domain来处理异常

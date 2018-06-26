@@ -1,0 +1,23 @@
+/*base*/
+html{font-size:100px;-webkit-transform:transition3d(0,0,0)}
+body{background-color:#fff;min-width:320px;}
+html,body,h1,h2,h3,h4,h5,h6,hr,p,iframe,dl,dt,dd,ul,ol,li,pre,form,button,input,textarea,th,td{margin:0;padding:0;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+div,a,p,header,article,section{-webkit-box-sizing:border-box; /* Safari */-moz-box-sizing:border-box; /* Firefox */box-sizing:border-box;}
+body,button,input,select,textarea{font:12px/1.5 "Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;}
+
+/*去掉黄色边框,安卓手机蓝色的boder*/
+input,button,select,textarea,a{outline:none;}
+
+/*去掉textarea右下角标*/
+textarea{resize:none;}
+html,body{-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;-khtml-user-select:none;user-select:none;}
+a,img{-webkit-touch-callout:none; /* 禁止用户在新窗口打开页面、如何禁止用户保存图片＼复制图片 for iOS */}
+table{border-collapse:collapse;border-spacing:0;border:0;}
+img{border:0;display:block;}
+ol,ul{list-style:none;}
+h1,h2,h3,h4{font-size:100%;}
+i,em,strong{font-style:normal;font-weight:normal;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
+a{text-decoration:none;}
+.clearfix:after{content:'';display:block;clear:both;height:0;}
+.clearfix{zoom:1;}

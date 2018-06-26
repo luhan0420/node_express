@@ -12,9 +12,17 @@
     <meta name="screen-orientation" content="portrait">
     <!--网页优先采用Chrome渲染-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>404</title>
+    <title>getMore</title>
   </head>
   <body>
-      htmlerror 404页面测试
+      <div class="container">
+          <%for(var i in first){ %>
+                <%if(i == 'img'){%>
+                    <img src="<%= first[i] %>" alt="">
+                <%}else{%>
+                    <div><%= first[i] %></div>
+                <%}%>
+          <%}%>
+      </div>
   </body>
 </html>

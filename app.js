@@ -4,7 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
+var Mock = require('mockjs');        //引入mock模块
 //文件读取
 var fs = require("fs");
 
@@ -21,15 +21,15 @@ app.set('view engine', 'ejs');
 
 app.use(compression());
 
-// app.use(function(req, res, next) {
-//     var send = res.send;
-//     res.send = function(body) {
-//         // if ('string' == typeof body)
-//         //     body = body.replace(/\n[\s]*/g, "");
-//         send.call(res, body);
-//     }
-//     return next();
-// });
+app.use(function(req, res, next) {
+    var send = res.send;
+    res.send = function(body) {
+        // if ('string' == typeof body)
+        //     body = body.replace(/\n[\s]*/g, "");
+        send.call(res, body);
+    }
+    return next();
+});
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
