@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-// 此文件严禁修改，如需修改请联系kai@zhugefang.com
-
 /**
  * Module dependencies.
  */
@@ -14,7 +12,7 @@ var http = require('http');
  * Get port from environment and store in Express.
  */
 //var port = normalizePort(wwwConfig.port);
-var port = normalizePort('3002');
+var port = normalizePort('6002');
 app.set('port', port);
 
 /**
